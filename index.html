@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team</title>
+
+    <link rel="stylesheet" href="team.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+<!----------------1stpage-------->
+<section class="hidden">
+    <div class="content">
+        <div class="text">
+          <h1>Mikanism.</h1>
+          <p>Customer Services</p>
+          <p>Video Production Editor</p>
+          <p>Graphic Design Specialist</p>
+          <p>Digital Marketing Manager</p>
+          <p>My Team Experienced Social Media Specialist and blabla bla 50words</p>
+        </div>
+        <div class="gallery">
+        <div class="image">
+          <img src="teamImage/kurt.jpg" alt="placeholder">
+        </div>
+        <div class="image">
+            <img src="teamImage/mark.jpg" alt="placeholder">
+          </div>
+          <div class="image">
+            <img src="teamImage/rohnna.jpg" alt="placeholder">
+          </div>
+          <div class="image">
+            <img src="teamImage/ken.jpg" alt="placeholder">
+          </div>
+          <div class="image">
+            <img src="teamImage/jibreel.jpg" alt="placeholder">
+          </div>
+      </div>
+    </div>   
+<!----------------1stpage-------->
+<div class="circle">
+
+    <button id="btn">
+        <a href="mailto:markr9353@gmail.com">
+        <p id="btnText">Contact Us</p>
+        <div class="checkbox">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+             </svg>
+        </div>
+    </a>
+    </button>
+</div>
+
+<script>
+    var btn = document.getElementById("btn");
+    var btnText = document.getElementById("btnText");
+
+    btn.onclick = function(){
+        btnText.innerHTML = "Sending";
+        btn.classList.add("active");
+    }
+</script>
+
+</section>
+
+
+</body>
+</html>

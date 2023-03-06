@@ -1,0 +1,187 @@
+@import url('http://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+body {
+    background-color: #131316;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* ---------animation-------*/
+
+section {
+    display: grid;
+    min-height: 100vh;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+/* ---------animation-------*/
+
+/* ---------text placement-------*/
+
+.header-text h1 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 60px;
+    text-align: left;
+    margin: 320px 0 0 300px;
+    padding: 0 20px;
+  } 
+  
+  .header-text p {
+    margin: 20px 0 0 300px;
+    padding: 0 20px;
+  }
+  
+  .additionaltext {
+    font-size: 18px;
+  }
+
+/* ---------textplacement-------*/  
+
+/* ---------text-------*/  
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+  }
+  
+  .text {
+    flex-basis: 50%;
+    padding-right: 50px;
+  }
+  
+  .text h1 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 60px;
+    text-align: left;
+    margin: 100px 0 0 300px;
+    padding: 0 20px;
+  }
+  
+  .text p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px 0 0 300px;
+    padding: 0 20px;
+    
+  }
+/* ---------Images-------*/ 
+  .gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 250px -75px 0;
+}
+  .image {
+    width: 100px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 50px;
+    position: relative;
+    transition: width 0.5s;
+    overflow: hidden;
+  }
+  
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+  }
+  
+.image:hover{
+    width: 400px;
+    cursor: pointer;
+}
+.image:hover img{
+    transform: scale(1.1);
+}
+.image:hover .img-text{
+    transform: translateY(0);
+}
+
+/* ---------1st page button-------*/ 
+
+.circle {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin: -150px 0 0 370px;
+}
+
+button {
+    width: 170px;
+    height: 50px;
+    border: 0;
+    outline: none;
+    background: #2f2f2f;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4); 
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.checkbox {
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    box-shadow: 0 0 12px -2px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    right: -40px;
+    opacity: 0;
+}
+.checkbox svg {
+    width: 50px;
+    margin: 0 0 0 0;
+}
+svg path {
+    stroke-width: 3;
+    stroke: #fff;
+    stroke-dasharray: 34;
+    stroke-dashoffset: 34;
+    stroke-linecap: round;
+}
+.active {
+    background: #2b5dff;
+    transition: 1s;
+}
+.active .checkbox {
+    right: 0;
+    opacity: 1;
+    transition: 1s;
+}
+.active p {
+    margin-right: 125px;
+    transition: 1s;
+}
+.active svg path {
+    stroke-dashoffset: 0;
+    transition: 1s;
+    transition-delay: 1s;
+}
