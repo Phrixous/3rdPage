@@ -2,17 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Mikanism.</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="team.css">
     <script defer src="app.js"></script>
 </head>
 <body>
 <!----------------1stpage-------->
-<section class="hidden">
-    <div class="content">
+<div class="contenthalf">
+<section class="hidden hidden-left">
+    
         <div class="text">
           <h1>Mikanism.</h1>
           <p>Customer Services</p>
@@ -21,6 +22,32 @@
           <p>Digital Marketing Manager</p>
           <p>My Team Experienced Social Media Specialist and blabla bla 50words</p>
         </div>
+<!----------------button-------->
+<div class="circle">
+  <button id="btn">
+      <a href="mailto:markr9353@gmail.com">
+      <p id="btnText">Contact Us</p>
+      <div class="checkbox">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+              <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+           </svg>
+      </div>
+  </a>
+  </button>
+</div>
+
+<script>
+  var btn = document.getElementById("btn");
+  var btnText = document.getElementById("btnText");
+
+  btn.onclick = function(){
+      btnText.innerHTML = "Sending a message";
+      btn.classList.add("active");
+  }
+</script>
+</section>
+<!----------------1stpage Image-------->
+<section class="hidden hidden-right">
         <div class="gallery">
         <div class="image">
           <img src="teamImage/kurt.jpg" alt="placeholder">
@@ -38,34 +65,109 @@
             <img src="teamImage/jibreel.jpg" alt="placeholder">
           </div>
       </div>
-    </div>   
-<!----------------1stpage-------->
-<div class="circle">
-
-    <button id="btn">
-        <a href="mailto:markr9353@gmail.com">
-        <p id="btnText">Contact Us</p>
-        <div class="checkbox">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
-                <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
-             </svg>
-        </div>
-    </a>
-    </button>
+    </div>
+</section>   
+<!----------------1stpageend-------->
+<!----------------2ndpage-------->
+<section class="hidden hidden-bottom">
+<div class="text-2ndpage">
+  <h1>Portfolio.</h1>
+  <p>Recent Projects</p>
 </div>
-
-<script>
-    var btn = document.getElementById("btn");
-    var btnText = document.getElementById("btnText");
-
-    btn.onclick = function(){
-        btnText.innerHTML = "Sending";
-        btn.classList.add("active");
-    }
-</script>
-
 </section>
 
+<div class="wrapper">
+  <section class="hidden hidden-bottom">
+  <i id="left" class="fa-solid fa-angle-left"></i>
+  <div class="carousel">
+    <img src="teamImage/kurt.jpg" alt="img" draggable="false">
+    <img src="teamImage/mark.jpg" alt="img" draggable="false">
+    <img src="teamImage/rohnna.jpg" alt="img" draggable="false">
+    <img src="teamImage/ken.jpg" alt="img" draggable="false">
+    <img src="teamImage/jibreel.jpg" alt="img" draggable="false">
+  </div>
+  <i id="right" class="fa-solid fa-angle-right"></i>
+</section>
+</div>
+
+<!----------------2ndpage end-------->
+<!----------------3rdpage-------->
+<section class="hidden hidden-bottom">
+  <div class="text-3rdpage">
+    <h1>About Us.</h1>
+    <p>Colleagues</p>
+  </div>
+
+  <div class="ggs">
+    <section class="hidden hidden-left">
+      <div class="wrapper">
+        <div class="outer"><section class="hidden hidden-left">
+          <div class="card" style="--delay:-1;">
+            <div class="content">
+              <div class="img"><img src="teamImage/kurt.jpg" alt=""></div>
+              <div class="details">
+                <span class="name">Kurt Dave Llanto</span>
+                <p>Customer Service</p>
+              </div>
+            </div>
+            <a href="#">Contact</a>
+          </div>
+          <div class="card" style="--delay:0;">
+            <div class="content">
+              <div class="img"><img src="teamImage/mark.jpg" alt=""></div>
+              <div class="details">
+                <span class="name">Mark Angelo Rosales</span>
+                <p>Video Editor</p>
+              </div>
+            </div>
+            <a href="#">Contact</a>
+          </div>
+          <div class="card" style="--delay:1;">
+            <div class="content">
+              <div class="img"><img src="teamImage/rohnna.jpg" alt=""></div>
+              <div class="details">
+                <span class="name">Rohnna Mae Cainglet</span>
+                <p>Graphic Specilist & Script writer</p>
+              </div>
+            </div>
+            <a href="#">Contact</a>
+          </div>
+          <div class="card" style="--delay:2;">
+            <div class="content">
+              <div class="img"><img src="teamImage/ken.jpg" alt=""></div>
+              <div class="details">
+                <span class="name">Kenneth Jay Golocino</span>
+                <p>Social Media Marketing</p>
+              </div>
+            </div>
+            <a href="#">Contact</a>
+          </div>
+          <div class="card" style="--delay:2;">
+            <div class="content">
+              <div class="img"><img src="teamImage/jibreel.jpg" alt=""></div>
+              <div class="details">
+                <span class="name">Jibreel Roberto Rosario</span>
+                <p>Advertiser & Customer Service</p>
+              </div>
+            </div>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hidden hidden-right">
+    
+      <div class="textUs">
+        <h1>Mikanism.</h1>
+        <p>As a Customer Services kay gwapo si jibreel</p>
+        <p>As a Video Production Editor kay gwapo si jibreel</p>
+        <p>As a Graphic Design Specialist kay gwapo si jibreel</p>
+        <p>As a Digital Marketing Manager kay gwapo si jibreel</p>
+        <p>Team Experienced Social Media Specialist and blabla bla 50words</p>
+      </div>
+      </section>
+  </div>
 
 </body>
 </html>
